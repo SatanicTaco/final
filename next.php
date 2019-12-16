@@ -22,7 +22,7 @@
                     VALUES ('{$search}', '{$ip}')";
                 //confirmation
                 if (mysqli_query($conn, $sql)) {
-                    header('Location: https://www.google.ca/$search');
+                    header('Location: https://www.google.ca/',$search);
                 } else {
                     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
                 }
